@@ -1,0 +1,454 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  /* HEADER */
+
+  .header .header__wrapper {
+    background-color: #333333;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .header__container {
+    padding: 5rem 0;
+  }
+
+  .header .header__container h1 {
+    color: #BCBDBD;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .header .header__container a {
+    color: white;
+  }
+
+  .header .header__container img {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  /* IMAGE */
+
+  .banner__image{
+    
+    background-color: #333333;
+  }
+
+  .banner__image img{
+    width: 100%;
+  }
+
+  /* COLUMN */
+
+ .column .column__container {
+    background-color: #333333;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5rem 15rem;
+ }
+
+ .column .column__container .column__box {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+ }
+
+ .column .column__container .column__box:nth-child(2) {
+    color: red;
+    background-color: white;
+ }
+
+/* BANNER */
+
+.banner .banner__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.banner .banner__container img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner__container .banner__lastchance {
+    font-size: 4.5rem;
+    padding: 3.5rem 1.5rem;
+    font-weight: 300;
+}
+
+.banner .lastchance__title {
+    font-weight: 600;
+    
+}
+
+.banner .lastchance__title h1 {
+    color: grey;
+    font-size: 3.5rem;
+}
+
+.banner .lastchance__title h2 {
+    font-size: 10.5rem;
+}
+
+.banner .lastchance__title h3 {
+    color: red;
+    font-size: 4rem;
+}
+
+.banner .lastchance__paragraph {
+    margin: 20rem 3rem;
+}
+
+.banner .lastchance__paragraph p:nth-child(2) {
+    margin: 5rem 0;
+}
+
+/* OFFER */
+
+.offer {
+    background-color: #1B2A2F;
+    
+}
+
+.offer .offer__container {
+    padding: 5rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.offer .offer__title {
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.offer .offer__paragraph {
+    font-size: 7rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.offer .offer__button {
+    background-color: white;
+    margin: 4rem 0;
+}
+
+.offer .offer__button a h1 {
+    color: red;
+    font-size: 6rem;
+    margin: 8rem 6rem;
+}
+
+/* CASUAL */
+
+.autumn__casual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10rem 0 5rem 0;
+}
+
+.autumn__casual .casual__img img {
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+
+.autumn__casual .casual__style {
+    font-size: 5rem;
+    margin: 0 2rem;
+}
+
+.autumn__casual .casual__title {
+    font-weight: 600;
+}
+
+.autumn__casual .casual__title h1 {
+    color: red;
+}
+.autumn__casual .casual__title h2 {
+    font-size: 10rem;
+}
+
+.autumn__casual .casual__paragraph p {
+    margin: 6rem 0;
+    padding: 0 3rem;
+}
+
+.autumn__casual .casual__button .button__container {
+    background-color: #1B2A2F;
+    margin: 0 15rem 0 0;
+    padding: 13rem 10rem;
+}
+
+.autumn__casual .casual__button .button__container h1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+/* COMBINE */
+.autumn__combine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 10rem 0;
+}
+
+.autumn__combine .combine__img img {
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+
+.autumn__combine .combine__style {
+    font-size: 5rem;
+    margin: 0 2rem;
+}
+
+.autumn__combine .combine__title {
+    font-weight: 600;
+}
+
+.autumn__combine .combine__title h1 {
+    color: red;
+}
+.autumn__combine .combine__title h2 {
+    font-size: 10rem;
+}
+
+.autumn__combine .combine__paragraph p {
+    margin: 6rem 0;
+    padding: 0 3rem;
+}
+
+.autumn__combine .combine__button .button__container {
+    background-color: #1B2A2F;
+    margin: 0 15rem 0 0;
+    padding: 13rem 10rem;
+}
+
+.autumn__combine .combine__button .button__container h1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+/* LINKS */
+
+.links {
+    background-color: #333333;
+    padding: 5rem 7rem;
+}
+
+.links .links__container {
+    display: flex;
+    padding: 3rem 5rem;
+    color: grey;
+}
+
+.links .links__wrapper {
+    padding: 5rem;
+    margin: 2rem;
+}
+
+.links .links__wrapper .links__title img {
+    width: 70rem;
+}
+
+.links .links__wrapper .links__socmed img {
+    width: 8rem;
+    margin: 0 0.3rem;
+}
+
+.links .links__paragraph p {
+    padding: 5rem;
+    font-size: 3rem;
+}
+
+/* FOOTER */
+
+.footer__logo .footer__container {
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 501px) {
+
+    .column .column__container {
+        display:none;
+    }
+
+    .banner .banner__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner .banner__lastchance .lastchance__title h1{
+        font-size: 2rem;
+    }
+
+    .banner .banner__lastchance .lastchance__title h2{
+        font-size: 5rem;
+    }
+    
+    .banner .banner__lastchance .lastchance__title h3{
+        font-size: 2rem;   
+    }
+
+    .banner .banner__lastchance .lastchance__paragraph {
+        font-size: 2rem;
+        margin: 1rem .5rem;
+    }
+
+    .offer .offer__title {
+        font-size: 5rem;
+    }
+
+    .offer .offer__paragraph {
+        font-size: 2.2rem;
+    }
+
+    .offer .offer__button a h1 {
+        margin: 3rem 16rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .offer .offer__button {
+        margin: 2rem 0;
+    }
+
+    .autumn__casual {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .autumn__casual .casual__style {
+        order: 1;
+    }
+
+
+}
